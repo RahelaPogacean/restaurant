@@ -14,14 +14,8 @@ public interface IRestaurantProcessing{
 	public static void editMenuItem(int idd, String newName, double newPrice);
 	public void createOrder(Order order, int idd, int nrTable, ArrayList<MenuItem> list);
 
-	public static double computePrice(int idd) {
-		return 0;
-		
-	}
-	public static String generateBill(int idd) throws FileNotFoundException, UnsupportedEncodingException {
-		return null;
-		
-	}
+	public static double computePrice(int idd);
+	public static String generateBill(int idd) throws FileNotFoundException, UnsupportedEncodingException;
 	
 	
 }
